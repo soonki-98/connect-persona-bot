@@ -102,19 +102,17 @@ main {
   overflow: auto; padding: 24px; display: flex; flex-direction: column;
   gap: 14px; min-height: 0; overscroll-behavior: contain;
 }
+
+/* ── Viewer Panel (right sidebar) ── */
 .viewer-panel {
   min-height: 0; display: flex; flex-direction: column; overflow: hidden;
   border-left: 1px solid var(--line); background: #f9fafb;
 }
-.viewer-tabs {
-  display: flex; border-bottom: 1px solid var(--line); background: #f0f2f5; flex: 0 0 auto;
+.viewer-panel-title {
+  padding: 12px 14px; font-size: 12px; font-weight: 700; text-transform: uppercase;
+  color: var(--muted); letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--line); background: #f0f2f5; flex: 0 0 auto;
 }
-.viewer-tab {
-  flex: 1; padding: 10px 6px; font-size: 12px; font-weight: 600;
-  border: 0; background: transparent; cursor: pointer; color: var(--muted);
-  border-bottom: 2px solid transparent; transition: color 0.15s;
-}
-.viewer-tab.active { color: var(--accent); border-bottom-color: var(--accent); background: #f9fafb; }
 .viewer-tab-content { flex: 1; overflow: auto; padding: 14px; overscroll-behavior: contain; }
 .viewer-help { color: var(--muted); font-size: 12px; line-height: 1.45; margin-bottom: 12px; }
 .feedback-round--latest { margin-bottom: 16px; }
@@ -127,44 +125,115 @@ main {
 .feedback-round-summary::before { content: "▶"; font-size: 9px; flex-shrink: 0; }
 details[open] .feedback-round-summary::before { content: "▼"; }
 details[open] .feedback-round-summary { margin-bottom: 8px; }
-.viewer-feedback-list { display: grid; gap: 10px; }
-.feedback-card {
-  background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px;
-  line-height: 1.52; overflow-wrap: anywhere; font-size: 13px;
+.viewer-feedback-list { display: grid; gap: 12px; }
+
+/* ── Avatar (shared) ── */
+.avatar {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: var(--accent); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; font-weight: 700; flex-shrink: 0; letter-spacing: 0;
 }
-.feedback-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
-.feedback-card-header strong { font-size: 13px; font-weight: 700; }
-.feedback-card-header span { color: var(--muted); font-size: 11px; }
+
+/* ── Card header (shared) ── */
+.card-header { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 12px; }
+.card-header-info { min-width: 0; flex: 1; }
+.card-header-name-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.card-header-info strong { font-size: 14px; font-weight: 700; line-height: 1.3; }
+.card-header-info small { display: block; color: var(--muted); font-size: 11px; margin-top: 2px; }
+
+/* ── Feedback Card (right sidebar) ── */
+.feedback-card {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+  padding: 16px; overflow-wrap: anywhere; font-size: 13px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
 .feedback-fit {
   font-size: 11px; color: var(--muted); font-style: italic;
-  background: #f1f5f9; border-radius: 4px; padding: 4px 7px; margin-bottom: 8px;
-  line-height: 1.4;
+  background: #f1f5f9; border-radius: 4px; padding: 5px 8px; margin-bottom: 10px; line-height: 1.4;
 }
-.feedback-impression { color: var(--text); margin-bottom: 10px; font-size: 13px; }
-.action-bar { margin-bottom: 8px; }
-.action-row { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
-.action-label { font-size: 11px; color: var(--muted); width: 36px; flex: 0 0 auto; }
-.action-track { flex: 1; height: 8px; background: #e5e7eb; border-radius: 4px; overflow: hidden; }
-.action-fill { height: 100%; border-radius: 4px; background: var(--accent); transition: width 0.4s; }
-.action-pct { font-size: 11px; color: var(--muted); width: 32px; text-align: right; flex: 0 0 auto; }
-.feedback-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
-.tag { font-size: 11px; padding: 3px 7px; border-radius: 999px; line-height: 1.4; }
+.feedback-impression { color: var(--text); margin-bottom: 12px; font-size: 13px; line-height: 1.55; }
+
+/* Progress bar action rows */
+.action-bars { display: grid; gap: 6px; padding-top: 12px; margin-top: 12px; border-top: 1px solid var(--line); }
+.action-row {
+  display: grid;
+  grid-template-columns: 20px 44px minmax(0,1fr) 28px;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+}
+.action-icon { font-size: 13px; line-height: 1; text-align: center; }
+.action-label { color: var(--muted); white-space: nowrap; }
+.action-track {
+  height: 6px; background: #e5e9ef; border-radius: 999px; overflow: hidden;
+}
+.action-fill { height: 100%; background: var(--accent); border-radius: 999px; transition: width 0.3s; }
+.action-pct { color: var(--text); font-weight: 700; text-align: right; }
+
+.feedback-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 12px; }
+.tag { font-size: 11px; padding: 3px 8px; border-radius: 999px; line-height: 1.4; }
 .tag-green { background: #d1fae5; color: #065f46; }
 .tag-red { background: #fee2e2; color: #991b1b; }
 .tag-raw { font-size: 12px; color: var(--muted); white-space: pre-wrap; }
-.comment-card {
-  background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px;
-  overflow-wrap: anywhere; font-size: 13px;
+
+/* ── Connect-style Post Card (chat area) ── */
+.connect-post-group {
+  display: flex; flex-direction: column; gap: 10px;
+  align-self: stretch; max-width: min(760px, 100%);
 }
-.comment-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
-.comment-card-header strong { font-size: 13px; font-weight: 700; }
-.comment-card-header span { color: var(--muted); font-size: 11px; }
-.comment-bubble {
-  background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 6px;
-  padding: 8px 10px; line-height: 1.55; color: var(--text);
+.connect-post {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
 }
-.comment-skip { color: var(--muted); font-style: italic; font-size: 12px; margin-bottom: 4px; }
-.comment-reason { color: var(--muted); font-size: 11px; margin-top: 6px; }
+.connect-post-header {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 16px 18px 0;
+}
+.connect-avatar {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: var(--accent); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; font-weight: 700; flex-shrink: 0;
+}
+.connect-author-info { min-width: 0; }
+.connect-author-name { display: block; font-size: 15px; font-weight: 700; line-height: 1.3; }
+.connect-author-meta { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; line-height: 1.4; }
+
+.connect-post-body {
+  padding: 14px 18px 18px;
+  font-size: 14px; line-height: 1.65; white-space: pre-wrap; overflow-wrap: anywhere;
+  color: var(--text);
+}
+
+/* ── Connect Comments Area (below post card) ── */
+.connect-comments-area { display: grid; gap: 10px; padding-left: 8px; }
+.connect-comments-loading {
+  font-size: 12px; color: var(--muted); padding: 4px 8px;
+}
+
+.connect-comment {
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.connect-comment-avatar {
+  width: 32px; height: 32px; border-radius: 50%;
+  background: #8ba8b5; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 700; flex-shrink: 0;
+}
+.connect-comment-body {
+  background: #f3f6f8; border-radius: 0 10px 10px 10px;
+  padding: 10px 13px; min-width: 0; flex: 1;
+}
+.connect-comment-name-row { display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px; flex-wrap: wrap; }
+.connect-comment-name { font-size: 13px; font-weight: 700; }
+.connect-comment-segment { font-size: 11px; color: var(--muted); }
+.connect-comment-text { font-size: 13px; line-height: 1.55; color: var(--text); overflow-wrap: anywhere; }
+.connect-comment-reason { font-size: 11px; color: var(--muted); margin-top: 5px; line-height: 1.4; }
+
+/* ── Standard chat bubbles (user / non-creator viewer) ── */
 .empty {
   align-self: center; margin-top: 12vh; max-width: 560px;
   color: var(--muted); text-align: center; line-height: 1.6;
@@ -176,6 +245,8 @@ details[open] .feedback-round-summary { margin-bottom: 8px; }
 }
 .message.user { align-self: flex-end; background: var(--user); border-color: #c9e3ec; }
 .message.assistant { align-self: flex-start; background: var(--assistant); }
+
+/* ── Composer ── */
 .composer {
   border-top: 1px solid var(--line); background: var(--panel); padding: 14px 18px 18px;
   display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: end; min-height: 0;

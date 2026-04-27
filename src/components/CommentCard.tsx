@@ -7,21 +7,33 @@ export interface ViewerCommentItem {
   reason?: string;
 }
 
+function Avatar({ label }: { label: string }) {
+  return <div className="avatar">{label.charAt(0).toUpperCase()}</div>;
+}
+
 export function CommentCard({ item }: { item: ViewerCommentItem }) {
   return (
     <div className="comment-card">
-      <div className="comment-card-header">
-        <strong>{item.label}</strong>
-        <span>
-          {item.segment} · {item.viewerId}
-        </span>
+      <div className="card-header">
+        <Avatar label={item.label} />
+        <div className="card-header-info">
+          <div className="card-header-name-row">
+            <strong>{item.label}</strong>
+            {!item.would_comment && (
+              <span className="comment-skip-badge">댓글 안 씀</span>
+            )}
+          </div>
+          <small>{item.segment} · {item.viewerId}</small>
+        </div>
       </div>
-      {item.would_comment && item.comment ? (
+
+      {item.would_comment && item.comment && (
         <div className="comment-bubble">{item.comment}</div>
-      ) : (
-        <div className="comment-skip">댓글 안 씀</div>
       )}
-      {item.reason && <div className="comment-reason">{item.reason}</div>}
+
+      {item.reason && (
+        <div className="comment-reason">{item.reason}</div>
+      )}
     </div>
   );
 }

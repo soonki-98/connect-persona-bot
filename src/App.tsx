@@ -267,17 +267,19 @@ export default function App() {
       try {
         const response = await client.chat(llmMessages);
         const assistantMsg: LlmMessage = { role: "assistant", content: response };
+        const roundId = selected.type === "creator" && autoFeedback
+          ? `${activePersona.id}_${Date.now()}`
+          : undefined;
         setConversationStore((prev) => ({
           ...prev,
           [activePersona.id]: {
-            messages: [...(prev[activePersona.id]?.messages ?? []), { role: "assistant", content: response }],
+            messages: [...(prev[activePersona.id]?.messages ?? []), { role: "assistant", content: response, roundId }],
             history: [...updatedHistory, assistantMsg],
           },
         }));
         setStatusText(resolvedProvider);
 
-        if (selected.type === "creator" && autoFeedback) {
-          const roundId = `${activePersona.id}_${Date.now()}`;
+        if (selected.type === "creator" && autoFeedback && roundId) {
           const contentPreview = response.slice(0, 100);
           setFeedbackStore((prev) => ({
             ...prev,
@@ -335,6 +337,7 @@ export default function App() {
             <ChatPanel
               activePersona={activePersona}
               messages={messages}
+              feedbackRounds={feedbackRounds}
               busy={busy}
               error={error}
               onSend={sendMessage}
