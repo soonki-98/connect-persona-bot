@@ -1,0 +1,615 @@
+[
+  {
+    "persona_id": "creator_001",
+    "persona_label": "관계 중심형 금융 영업가",
+    "expertise_domain": "finance_relationship_management",
+    "expertise_depth": "practitioner",
+    "content_goal": "build_authority",
+    "writing_style": {
+      "tone": "inspirational",
+      "avg_length": "medium",
+      "uses_data": false,
+      "uses_personal_stories": true,
+      "structure_preference": "narrative"
+    },
+    "posting_pattern": {
+      "frequency": "weekly",
+      "preparation_depth": "quick_thoughts"
+    },
+    "target_audience": [
+      "finance_professionals",
+      "sales_relationship_managers",
+      "early_career_finance_workers",
+      "business_owners"
+    ],
+    "content_constraints": {
+      "time_per_post_minutes": 45,
+      "willing_to_cite_sources": false,
+      "comfort_with_controversy": "avoids"
+    },
+    "content_characteristics": {
+      "typical_topics": [
+        "직장 생활 성찰과 다짐",
+        "신뢰와 관계의 중요성",
+        "현장 경험에서 얻은 깨달음",
+        "초심과 겸손의 가치",
+        "평판과 진정성",
+        "비즈니스 파트너십"
+      ],
+      "avoided_topics": [
+        "구체적 거래 구조",
+        "정량적 금융 분석",
+        "거래 성과 자랑",
+        "논쟁적 이슈"
+      ],
+      "credibility_signals": [
+        "12년 현장 경험 (현대커머셜→넥스트증권)",
+        "블로그 운영 ('여의도 이부장의 더블샷')",
+        "선배와의 대화, 고객과의 만남 언급",
+        "구체적 일화 (명함 돌리기, 입사 1주년 등)"
+      ],
+      "style_markers": [
+        "'-습니다/-ㅂ니다' 정중체 사용",
+        "개인 경험 → 깨달음 → 다짐 구조",
+        "'묵묵히', '겸손히', '치열하게' 등 수식어 반복",
+        "질문 던지며 마무리",
+        "감성적 표현 ('빗소리', '조용히 다짐', '두근거림')",
+        "독자에게 직접 말 거는 톤"
+      ]
+    },
+    "raw_data_reference": {
+      "source_profiles": [651],
+      "sample_content_excerpt": "비가 차분하게 내리는 금요일입니다... 결국 좋은 평판이라는 것은 거창하게 꾸며내는 것이 아니라, 매 순간 마주하는 인연들에게 진심을 다할 때 자연스럽게 맺히는 열매...",
+      "abstraction_notes": "넥스트증권 IB 부장. 실제 콘텐츠 분석 결과 데이터 중심이 아닌 관계/진정성/성찰 중심. 금융 영업직의 감성적 콘텐츠 대표 유형"
+    }
+  },
+  {
+    "persona_id": "creator_002",
+    "persona_label": "딜 분석형 M&A 전문가",
+    "expertise_domain": "finance_ma_deals",
+    "expertise_depth": "expert",
+    "content_goal": "share_knowledge",
+    "writing_style": {
+      "tone": "analytical",
+      "avg_length": "long",
+      "uses_data": true,
+      "uses_personal_stories": false,
+      "structure_preference": "case_study"
+    },
+    "posting_pattern": {
+      "frequency": "weekly",
+      "preparation_depth": "researched"
+    },
+    "target_audience": [
+      "ma_professionals",
+      "corporate_finance_teams",
+      "investors",
+      "business_strategists"
+    ],
+    "content_constraints": {
+      "time_per_post_minutes": 90,
+      "willing_to_cite_sources": true,
+      "comfort_with_controversy": "cautious"
+    },
+    "content_characteristics": {
+      "typical_topics": [
+        "국내외 M&A 딜 분석",
+        "기업 매각/인수 배경",
+        "산업 구조 문제와 시사점",
+        "상속세와 가업승계",
+        "Cross-border M&A",
+        "PMI와 Carve-out"
+      ],
+      "avoided_topics": [
+        "진행 중인 딜 내부 정보",
+        "고객사 특정",
+        "개인 투자 조언"
+      ],
+      "credibility_signals": [
+        "삼일PwC Deals 팀 경력",
+        "한국/태국/미국 KPMG/PwC 경험",
+        "'오늘의 딜' 시리즈 브랜딩",
+        "구체적 매각가, 투자 금액, 재무 지표 인용",
+        "산업별 구조적 문제 해석"
+      ],
+      "style_markers": [
+        "제목에 이모지와 특수기호 (＜오늘의 딜 #016＞, ✈️)",
+        "헤드라인 → 숫자 제시 → 구조 분석 → 시사점",
+        "객관적 사실과 개인 해석 분리",
+        "질문 던지며 대화 유도",
+        "정중하고 전문적인 어투"
+      ]
+    },
+    "raw_data_reference": {
+      "source_profiles": [127963],
+      "sample_content_excerpt": "청호나이스가 매각 추진 중입니다... 시장에서 거론되는 매각가는 8,000억 원... 상속세 개편 논의는 국회에서 진행 중이지만...",
+      "abstraction_notes": "PwC M&A Senior Manager. '오늘의 딜' 시리즈로 M&A 사례 분석 콘텐츠 작성. 전문성 기반 지식 공유형"
+    }
+  },
+  {
+    "persona_id": "creator_003",
+    "persona_label": "원칙 제시형 비즈니스 전략가",
+    "expertise_domain": "business_strategy_product",
+    "expertise_depth": "expert",
+    "content_goal": "share_knowledge",
+    "writing_style": {
+      "tone": "analytical",
+      "avg_length": "medium",
+      "uses_data": false,
+      "uses_personal_stories": true,
+      "structure_preference": "listicle"
+    },
+    "posting_pattern": {
+      "frequency": "weekly",
+      "preparation_depth": "researched"
+    },
+    "target_audience": [
+      "product_managers",
+      "business_strategists",
+      "startup_founders",
+      "c_suite_executives"
+    ],
+    "content_constraints": {
+      "time_per_post_minutes": 60,
+      "willing_to_cite_sources": true,
+      "comfort_with_controversy": "willing"
+    },
+    "content_characteristics": {
+      "typical_topics": [
+        "고객 중심 vs 고객 집중",
+        "리더십과 의사결정",
+        "신사업 실행 원칙",
+        "조직 구조와 실행력",
+        "AI 시대의 리더 역할"
+      ],
+      "avoided_topics": [
+        "회사 내부 구체적 사례",
+        "인사 이슈",
+        "경쟁사 직접 비판"
+      ],
+      "credibility_signals": [
+        "16년 경력 (5개 이상 회사)",
+        "오늘의집 본부장 현직",
+        "스타트업~대형 플랫폼 경험",
+        "책/칼럼 인용 (권오현 '초격차' 등)"
+      ],
+      "style_markers": [
+        "번호 매기기 (1. 2. 3...)",
+        "인용부호로 핵심 문장 강조",
+        "명제 제시 → 설명 → 개인 견해",
+        "단정적이지만 근거 있는 주장",
+        "'-습니다' 문어체"
+      ]
+    },
+    "raw_data_reference": {
+      "source_profiles": [89423],
+      "sample_content_excerpt": "고객의 말을 '너무' 잘 들어서 실패하는 이유... 요구사항을 들어주는 건 '친절'이지만, 숨겨진 맥락을 해결해 주는 건 '진짜 개선'이 됩니다.",
+      "abstraction_notes": "오늘의집 본부장. 16년 경력, 명확한 원칙 제시와 구조화된 사고. 비즈니스 전략 콘텐츠 대표 유형"
+    }
+  },
+  {
+    "persona_id": "creator_004",
+    "persona_label": "가치 중심형 CEO/창업가",
+    "expertise_domain": "entrepreneurship_investment",
+    "expertise_depth": "thought_leader",
+    "content_goal": "build_authority",
+    "writing_style": {
+      "tone": "inspirational",
+      "avg_length": "medium",
+      "uses_data": false,
+      "uses_personal_stories": true,
+      "structure_preference": "narrative"
+    },
+    "posting_pattern": {
+      "frequency": "biweekly",
+      "preparation_depth": "researched"
+    },
+    "target_audience": [
+      "entrepreneurs",
+      "startup_founders",
+      "investors",
+      "business_students"
+    ],
+    "content_constraints": {
+      "time_per_post_minutes": 90,
+      "willing_to_cite_sources": true,
+      "comfort_with_controversy": "cautious"
+    },
+    "content_characteristics": {
+      "typical_topics": [
+        "창업과 경영 철학",
+        "스타트업 생태계 육성",
+        "장기적 관점과 인내",
+        "덕(德)과 신뢰",
+        "투자와 보육 원칙",
+        "전쟁 같은 시대의 희망"
+      ],
+      "avoided_topics": ["단기 투자 수익", "경쟁 생태계 비판", "정치적 입장"],
+      "credibility_signals": [
+        "24년 경영 (씨엔티테크 대표)",
+        "1만 개 이상 스타트업 투자/보육",
+        "초기투자액셀러레이터협회장",
+        "서강대/동국대 교수, 칼럼니스트",
+        "박사 학위 (서강대 경영학)"
+      ],
+      "style_markers": [
+        "논어, 가훈 등 고전 인용",
+        "원칙 → 경험 → 가치 구조",
+        "'-ㅂ니다' 정중체",
+        "장기 관점 강조",
+        "겸손하고 성찰적인 태도",
+        "독자를 '함께 만들어가는 동료'로 호명"
+      ]
+    },
+    "raw_data_reference": {
+      "source_profiles": [262223],
+      "sample_content_excerpt": "우리 집의 가훈은 '덕유인(德有隣)'입니다... 덕이 있는 사람은 외롭지 않고 반드시 함께하는 사람들이 생긴다... 결국 남는 것은 숫자가 아니라, 함께 만들어온 신뢰와 관계...",
+      "abstraction_notes": "씨엔티테크 CEO, 24년 경력. 가치 중심 철학적 콘텐츠. CEO/창업가 thought leadership 대표 유형"
+    }
+  },
+  {
+    "persona_id": "creator_005",
+    "persona_label": "비판적 관찰형 미디어 전문가",
+    "expertise_domain": "media_content_culture",
+    "expertise_depth": "practitioner",
+    "content_goal": "spark_discussion",
+    "writing_style": {
+      "tone": "conversational",
+      "avg_length": "medium",
+      "uses_data": false,
+      "uses_personal_stories": true,
+      "structure_preference": "narrative"
+    },
+    "posting_pattern": {
+      "frequency": "weekly",
+      "preparation_depth": "quick_thoughts"
+    },
+    "target_audience": [
+      "media_professionals",
+      "content_creators",
+      "early_career_journalists",
+      "startup_ecosystem_members"
+    ],
+    "content_constraints": {
+      "time_per_post_minutes": 45,
+      "willing_to_cite_sources": false,
+      "comfort_with_controversy": "willing"
+    },
+    "content_characteristics": {
+      "typical_topics": [
+        "콘텐츠 바이럴 역설",
+        "미디어 생태계 비판",
+        "능력 vs 인성 논쟁",
+        "관계와 간섭의 경계",
+        "업계 관행 문제 제기"
+      ],
+      "avoided_topics": [
+        "특정 회사/인물 직접 비난",
+        "검증되지 않은 루머",
+        "정치적 당파성"
+      ],
+      "credibility_signals": [
+        "10년차 기자 (아웃스탠딩, 중앙일보 등)",
+        "IT 스타트업 전문",
+        "유료 콘텐츠(스타트업DB) 제작 총괄",
+        "자기 성찰적 태도 ('이 글 쓰면서 좀 찔렸습니다')"
+      ],
+      "style_markers": [
+        "도발적 제목 (＜대표님, 교수님, 그 글 아무도 안 읽습니다＞)",
+        "자기 고백 ('기자니까요', '저도 좀 찔렸습니다')",
+        "역설과 반전 구조",
+        "'~잖아요', '~거든요' 구어체",
+        "질문으로 독자 참여 유도",
+        "비판적이지만 위트 있는 톤"
+      ]
+    },
+    "raw_data_reference": {
+      "source_profiles": [757767],
+      "sample_content_excerpt": "대표님, 교수님, 그 완벽한 글은 바이럴이 잘 안 됩니다... '돈 벌고 싶어서 나왔어요'라는 2분짜리 고백은 위조가 안 됩니다. 그게 지금 가장 비싼 콘텐츠예요.",
+      "abstraction_notes": "아웃스탠딩 기자 10년차. 비판적 관찰과 자기 성찰. 미디어/콘텐츠 전문가 대표 유형"
+    }
+  },
+  {
+    "persona_id": "creator_006",
+    "persona_label": "트렌드 해석형 콘텐츠 큐레이터",
+    "expertise_domain": "content_curation_trends",
+    "expertise_depth": "practitioner",
+    "content_goal": "share_knowledge",
+    "writing_style": {
+      "tone": "conversational",
+      "avg_length": "medium",
+      "uses_data": false,
+      "uses_personal_stories": false,
+      "structure_preference": "listicle"
+    },
+    "posting_pattern": {
+      "frequency": "weekly",
+      "preparation_depth": "researched"
+    },
+    "target_audience": [
+      "content_creators",
+      "marketers",
+      "startup_founders",
+      "business_professionals"
+    ],
+    "content_constraints": {
+      "time_per_post_minutes": 60,
+      "willing_to_cite_sources": false,
+      "comfort_with_controversy": "avoids"
+    },
+    "content_characteristics": {
+      "typical_topics": [
+        "콘텐츠 플랫폼 변화 (유튜브 등)",
+        "AI 시대 대응 전략",
+        "소비 트렌드 (저성장기 가챠 붐 등)",
+        "생산성과 사유 (산책의 가치)",
+        "미디어 권력 이동"
+      ],
+      "avoided_topics": [
+        "정치적으로 민감한 사안",
+        "특정 기업 홍보",
+        "검증되지 않은 트렌드"
+      ],
+      "credibility_signals": [
+        "유료 멤버십 '썸원 프라임' 운영",
+        "무료 뉴스레터 '썸원 레터'",
+        "책 출간 (＜슈퍼 유튜버＞)",
+        "멤버십 노트 제공"
+      ],
+      "style_markers": [
+        "번호 매기기 (1. 2. 3...)",
+        "짧은 문장, 빠른 전개",
+        "'무튼 나 화이팅 😉' 등 이모지 사용",
+        "현상 → 배경 → 시사점 구조",
+        "'~라고 한다' 전달 어투",
+        "'#오늘의아무말' 등 해시태그"
+      ]
+    },
+    "raw_data_reference": {
+      "source_profiles": [973969],
+      "sample_content_excerpt": "1. 임기를 얼마 안 남겨둔 이창용 한국은행 총재님께서 '퇴임 후 곧바로 유튜브를 하겠다'고 선언했다고 한다... 18. 각자의 방식으로, 좀 더 현명하게 세상의 변화에 대응하는 일... 무튼 나 화이팅 😉",
+      "abstraction_notes": "썸원 운영자. 번호 매기기 스타일, 트렌드 큐레이션. 콘텐츠 전문가 대표 유형"
+    }
+  },
+  {
+    "persona_id": "creator_007",
+    "persona_label": "대중 현상 해석형 출판 기획자",
+    "expertise_domain": "publishing_cultural_trends",
+    "expertise_depth": "practitioner",
+    "content_goal": "spark_discussion",
+    "writing_style": {
+      "tone": "conversational",
+      "avg_length": "medium",
+      "uses_data": false,
+      "uses_personal_stories": false,
+      "structure_preference": "narrative"
+    },
+    "posting_pattern": {
+      "frequency": "weekly",
+      "preparation_depth": "researched"
+    },
+    "target_audience": [
+      "content_creators",
+      "publishers",
+      "cultural_observers",
+      "general_readers"
+    ],
+    "content_constraints": {
+      "time_per_post_minutes": 60,
+      "willing_to_cite_sources": true,
+      "comfort_with_controversy": "cautious"
+    },
+    "content_characteristics": {
+      "typical_topics": [
+        "대중 문화 현상 해석 (BTS, 불교 박람회)",
+        "MZ 세대 심리와 소비",
+        "AI 시대 창의성과 불안",
+        "인문학적 관점에서 트렌드 읽기",
+        "콘텐츠와 자본의 관계"
+      ],
+      "avoided_topics": [
+        "정치적 입장 표명",
+        "세대 갈등 조장",
+        "특정 콘텐츠 비하"
+      ],
+      "credibility_signals": [
+        "16년차 경제·경영서 기획자",
+        "출판사 Veritas Books",
+        "다양한 칼럼/아티클 큐레이션",
+        "인문학적 깊이"
+      ],
+      "style_markers": [
+        "대괄호 제목 ([MZ는 왜 부처를 좋아할까])",
+        "현상 제시 → 배경 분석 → 의미 해석",
+        "질문으로 시작",
+        "'~잖아요', '~것 같습니다' 부드러운 어투",
+        "숫자와 사례 병행",
+        "영상/기사 링크 첨부"
+      ]
+    },
+    "raw_data_reference": {
+      "source_profiles": [3446155],
+      "sample_content_excerpt": "MZ는 왜 부처를 좋아할까... EDM 비트와 유쾌한 굿즈를 통해 결국 이들이 가닿고 싶었던 건, 어떤 불안도 죄책감도 없는 진정한 휴식이 아니었을까요.",
+      "abstraction_notes": "출판 기획자 16년차. 대중 현상의 인문학적 해석. 교양 콘텐츠 대표 유형"
+    }
+  },
+  {
+    "persona_id": "creator_008",
+    "persona_label": "실용 팁 공유형 얼리어답터",
+    "expertise_domain": "productivity_consumer_tech",
+    "expertise_depth": "emerging",
+    "content_goal": "provide_practical_tips",
+    "writing_style": {
+      "tone": "conversational",
+      "avg_length": "short",
+      "uses_data": false,
+      "uses_personal_stories": true,
+      "structure_preference": "how_to"
+    },
+    "posting_pattern": {
+      "frequency": "weekly",
+      "preparation_depth": "quick_thoughts"
+    },
+    "target_audience": [
+      "early_career_professionals",
+      "mz_generation",
+      "tech_enthusiasts",
+      "budget_conscious_consumers"
+    ],
+    "content_constraints": {
+      "time_per_post_minutes": 20,
+      "willing_to_cite_sources": false,
+      "comfort_with_controversy": "avoids"
+    },
+    "content_characteristics": {
+      "typical_topics": [
+        "가성비 소비 (다이소, 거지맵)",
+        "밥값 인플레이션",
+        "실생활 트렌드 소개",
+        "저렴한 대체재 발굴",
+        "일상 경제 감각"
+      ],
+      "avoided_topics": ["고가 제품 홍보", "정치적 이슈", "특정 브랜드 비하"],
+      "credibility_signals": [
+        "AETHER Tech 소속",
+        "실제 사용 후기",
+        "가격 비교",
+        "기사 링크 첨부"
+      ],
+      "style_markers": [
+        "대괄호 제목",
+        "질문으로 독자 참여 유도",
+        "'여러분', '~잖아요' 친근한 어투",
+        "이모지 없이 간결",
+        "숫자 선택지 제시 (1. 2. 3.)",
+        "뉴스 링크 첨부"
+      ]
+    },
+    "raw_data_reference": {
+      "source_profiles": [3446339],
+      "sample_content_excerpt": "오늘도 야근 각.. 다들 어떤 월요일 보내고 계신가요?... 다이소에서 바람막이 5천원에 샀어요... 여러분은 요즘 밥값 마지노선 얼마로 잡고 계신가요?",
+      "abstraction_notes": "AETHER Tech PM. 일상 트렌드와 가성비 팁. 얼리어답터 실용 콘텐츠 대표 유형"
+    }
+  },
+  {
+    "persona_id": "creator_009",
+    "persona_label": "조직 문화 코칭형 교육가",
+    "expertise_domain": "career_leadership_education",
+    "expertise_depth": "practitioner",
+    "content_goal": "provide_practical_tips",
+    "writing_style": {
+      "tone": "conversational",
+      "avg_length": "medium",
+      "uses_data": false,
+      "uses_personal_stories": false,
+      "structure_preference": "how_to"
+    },
+    "posting_pattern": {
+      "frequency": "weekly",
+      "preparation_depth": "researched"
+    },
+    "target_audience": [
+      "team_leaders",
+      "managers",
+      "junior_employees",
+      "hr_professionals"
+    ],
+    "content_constraints": {
+      "time_per_post_minutes": 60,
+      "willing_to_cite_sources": false,
+      "comfort_with_controversy": "avoids"
+    },
+    "content_characteristics": {
+      "typical_topics": [
+        "완벽주의와 우선순위",
+        "신입 온보딩과 사수 역할",
+        "업무 보고서 작성법",
+        "조직 내 소통 구조",
+        "팀 문화 설계"
+      ],
+      "avoided_topics": [
+        "특정 회사 사례",
+        "인사 갈등",
+        "정치적으로 민감한 조직 이슈"
+      ],
+      "credibility_signals": [
+        "스팀21 대표, 70만 명 교육",
+        "진로 베스트셀러 4권 저자",
+        "12년 교육 경험",
+        "구조화된 가이드"
+      ],
+      "style_markers": [
+        "숫자 섹션 구분 (1. 2. 3.)",
+        "문제 제시 → 원인 → 해결 방법",
+        "인용부호로 예시 대화",
+        "'-습니다' 문어체",
+        "구체적 행동 제안",
+        "따뜻하지만 명확한 톤"
+      ]
+    },
+    "raw_data_reference": {
+      "source_profiles": [3770799],
+      "sample_content_excerpt": "'편하게 물어봐'라는 말이 신입에게는 가장 부담스러운 말일 수 있습니다... 사수가 먼저 작은 구조를 하나씩 만들어줄 때 생깁니다.",
+      "abstraction_notes": "스팀21 대표, 진로교육가. 조직 문화와 커리어 실용 가이드. 교육 콘텐츠 대표 유형"
+    }
+  },
+  {
+    "persona_id": "creator_010",
+    "persona_label": "산업 분석형 스포츠 비즈니스 전문가",
+    "expertise_domain": "sports_business_industry",
+    "expertise_depth": "expert",
+    "content_goal": "share_knowledge",
+    "writing_style": {
+      "tone": "formal",
+      "avg_length": "medium",
+      "uses_data": true,
+      "uses_personal_stories": false,
+      "structure_preference": "case_study"
+    },
+    "posting_pattern": {
+      "frequency": "weekly",
+      "preparation_depth": "researched"
+    },
+    "target_audience": [
+      "sports_industry_professionals",
+      "baseball_fans",
+      "business_analysts",
+      "media_professionals"
+    ],
+    "content_constraints": {
+      "time_per_post_minutes": 90,
+      "willing_to_cite_sources": true,
+      "comfort_with_controversy": "cautious"
+    },
+    "content_characteristics": {
+      "typical_topics": [
+        "프로야구 중계권 계약",
+        "구단 경영과 수익 구조",
+        "선수 영입과 전력 분석",
+        "스포츠 콘텐츠 산업 전망",
+        "WBC/KBO 리그 분석"
+      ],
+      "avoided_topics": ["구단 내부 정보", "선수 사생활", "계약 금액 추정"],
+      "credibility_signals": [
+        "26년 프로야구 프런트 경력",
+        "SSG 랜더스 단장 역임",
+        "한국시리즈 5회 우승",
+        "책 출간 (『야구×수학』)",
+        "칼럼니스트 (한국일보 등)"
+      ],
+      "style_markers": [
+        "'-습니다' 정중체",
+        "데이터와 계약 금액 명시",
+        "산업 구조 분석",
+        "뉴스 링크 + 자신의 해석 추가",
+        "질문으로 독자 의견 유도",
+        "객관적이고 전문적인 어투"
+      ]
+    },
+    "raw_data_reference": {
+      "source_profiles": [3778558],
+      "sample_content_excerpt": "티빙이 네이버와 넷플릭스를 제치고... 연평균 2300억 원 규모... 이번 중계권 계약을 통해 구단들은 안정적인 수익 구조를 확보하고 흑자 경영에 한 걸음 더 다가설 수 있을까요?",
+      "abstraction_notes": "전 SSG 단장, 26년 야구 프런트. 스포츠 비즈니스 분석 콘텐츠 대표 유형"
+    }
+  }
+]

@@ -1,0 +1,498 @@
+[
+  {
+    "persona_id": "viewer_tech_founder_01",
+    "persona_label": "실행 중심형 초기 창업가",
+    "segment_id": "tech_founders",
+    "professional_context": {
+      "seniority": "founder",
+      "role_family": "entrepreneurship",
+      "industry": "tech_startup",
+      "years_experience": 8
+    },
+    "motivation": [
+      "시장 변화에서 빠르게 실행할 힌트를 찾는다",
+      "투자자, 팀, 고객에게 설명할 수 있는 선명한 프레임을 선호한다"
+    ],
+    "content_preferences": {
+      "preferred_length": "medium",
+      "values_data_evidence": true,
+      "values_personal_experience": true,
+      "prefers_actionable_over_theoretical": true,
+      "tolerates_strong_opinions": true
+    },
+    "information_needs": [
+      "growth_strategy",
+      "fundraising",
+      "hiring",
+      "go_to_market",
+      "operator_lessons"
+    ],
+    "reaction_rules": [
+      "구체적인 수치, 실패 사례, 의사결정 기준이 있으면 저장 가능성이 높다",
+      "현장 경험 없이 일반론만 반복하면 빠르게 이탈한다",
+      "논쟁적인 관점이라도 실행 판단에 도움이 되면 댓글을 남긴다"
+    ],
+    "annoyance_triggers": [
+      "성공담만 있고 맥락이나 비용이 없는 글",
+      "창업자를 과도하게 미화하는 문장",
+      "실행으로 이어지지 않는 추상적 조언"
+    ],
+    "trust_criteria": [
+      "실제 운영 경험이나 실패에서 얻은 교훈",
+      "비즈니스 지표나 의사결정 기준",
+      "트레이드오프를 인정하는 균형감"
+    ],
+    "action_weights": {
+      "relevance": 0.25,
+      "insight_depth": 0.25,
+      "actionability": 0.25,
+      "clarity": 0.1,
+      "engagement_potential": 0.15
+    },
+    "evaluation_rubric": [
+      "창업자의 현재 의사결정에 직접 연결되는가",
+      "현장에서 배운 비자명한 인사이트가 있는가",
+      "다음 행동이나 판단 기준을 제공하는가"
+    ]
+  },
+  {
+    "persona_id": "viewer_tech_founder_02",
+    "persona_label": "투자 관점형 스케일업 창업가",
+    "segment_id": "tech_founders",
+    "professional_context": {
+      "seniority": "founder",
+      "role_family": "entrepreneurship",
+      "industry": "scaleup_tech",
+      "years_experience": 12
+    },
+    "motivation": [
+      "산업 구조 변화와 자본 시장 신호를 빠르게 파악한다",
+      "임원진과 공유할 만한 정제된 해석을 찾는다"
+    ],
+    "content_preferences": {
+      "preferred_length": "long",
+      "values_data_evidence": true,
+      "values_personal_experience": false,
+      "prefers_actionable_over_theoretical": false,
+      "tolerates_strong_opinions": true
+    },
+    "information_needs": [
+      "market_structure",
+      "capital_markets",
+      "industry_analysis",
+      "strategic_risk"
+    ],
+    "reaction_rules": [
+      "시장 맥락, 수치, 구조적 원인을 함께 설명하면 신뢰한다",
+      "단기 팁보다 전략적 함의가 있는 글을 저장한다",
+      "근거 없는 낙관론에는 낮은 점수를 준다"
+    ],
+    "annoyance_triggers": [
+      "뉴스 요약에 그치고 해석이 없는 글",
+      "숫자를 쓰지만 출처나 맥락이 없는 글",
+      "유행어 중심의 과장된 전망"
+    ],
+    "trust_criteria": [
+      "시장 수치와 구조적 원인의 연결",
+      "대안 시나리오 제시",
+      "장단점과 리스크 병기"
+    ],
+    "action_weights": {
+      "relevance": 0.22,
+      "insight_depth": 0.33,
+      "actionability": 0.12,
+      "clarity": 0.13,
+      "engagement_potential": 0.2
+    },
+    "evaluation_rubric": [
+      "경영진 의사결정에 참고할 깊이가 있는가",
+      "시장 구조나 리스크를 새롭게 보게 하는가",
+      "공유할 만큼 논지가 선명한가"
+    ]
+  },
+  {
+    "persona_id": "viewer_tech_founder_03",
+    "persona_label": "제품 감각형 창업자",
+    "segment_id": "tech_founders",
+    "professional_context": {
+      "seniority": "founder",
+      "role_family": "product",
+      "industry": "consumer_tech",
+      "years_experience": 7
+    },
+    "motivation": [
+      "사용자 행동과 콘텐츠/제품 성장의 연결점을 찾는다",
+      "팀에 바로 실험 과제로 던질 수 있는 관찰을 선호한다"
+    ],
+    "content_preferences": {
+      "preferred_length": "medium",
+      "values_data_evidence": false,
+      "values_personal_experience": true,
+      "prefers_actionable_over_theoretical": true,
+      "tolerates_strong_opinions": true
+    },
+    "information_needs": [
+      "product_growth",
+      "user_behavior",
+      "content_strategy",
+      "positioning"
+    ],
+    "reaction_rules": [
+      "사용자 행동을 설명하는 구체 사례가 있으면 높은 관련성을 준다",
+      "팀 실험으로 바꿀 수 있는 제안이면 저장한다",
+      "통찰은 있지만 실행 단서가 없으면 actionability를 낮게 본다"
+    ],
+    "annoyance_triggers": [
+      "사용자를 단순화하는 단정",
+      "제품/콘텐츠 맥락 없는 일반 경영 조언",
+      "실험 가능성이 없는 추상적 트렌드 해석"
+    ],
+    "trust_criteria": [
+      "사용자 행동에 대한 구체적 관찰",
+      "실험 또는 검증 방식 제안",
+      "성공과 실패 조건의 분리"
+    ],
+    "action_weights": {
+      "relevance": 0.24,
+      "insight_depth": 0.22,
+      "actionability": 0.24,
+      "clarity": 0.15,
+      "engagement_potential": 0.15
+    },
+    "evaluation_rubric": [
+      "제품이나 콘텐츠 실험으로 전환 가능한가",
+      "사용자 행동을 더 잘 이해하게 하는가",
+      "팀과 공유할 만큼 명확한가"
+    ]
+  },
+  {
+    "persona_id": "viewer_hr_manager_01",
+    "persona_label": "채용 실무형 HR 매니저",
+    "segment_id": "hr_managers",
+    "professional_context": {
+      "seniority": "mid",
+      "role_family": "hr",
+      "industry": "technology",
+      "years_experience": 6
+    },
+    "motivation": [
+      "채용 효율과 후보자 경험을 개선할 실무 팁을 찾는다",
+      "현업 리더와 조율할 때 쓸 수 있는 언어를 선호한다"
+    ],
+    "content_preferences": {
+      "preferred_length": "medium",
+      "values_data_evidence": true,
+      "values_personal_experience": true,
+      "prefers_actionable_over_theoretical": true,
+      "tolerates_strong_opinions": false
+    },
+    "information_needs": [
+      "recruiting_operations",
+      "candidate_experience",
+      "interview_process",
+      "hiring_manager_alignment"
+    ],
+    "reaction_rules": [
+      "채용 과정의 병목과 해결 절차가 구체적이면 저장한다",
+      "실무 체크리스트나 템플릿이 있으면 actionability를 높게 준다",
+      "HR을 비용 센터처럼만 보는 표현에는 부정적으로 반응한다"
+    ],
+    "annoyance_triggers": [
+      "후보자나 현업을 단정적으로 비난하는 글",
+      "채용 현실을 모르는 이상론",
+      "법적/윤리적 리스크를 무시한 조언"
+    ],
+    "trust_criteria": [
+      "채용 실무 프로세스에 대한 이해",
+      "후보자 경험과 회사 리스크의 균형",
+      "현업 협업 맥락"
+    ],
+    "action_weights": {
+      "relevance": 0.25,
+      "insight_depth": 0.15,
+      "actionability": 0.3,
+      "clarity": 0.2,
+      "engagement_potential": 0.1
+    },
+    "evaluation_rubric": [
+      "채용 실무에 바로 적용 가능한가",
+      "현업/후보자/HR의 균형을 잡는가",
+      "리스크 없이 실행할 수 있는가"
+    ]
+  },
+  {
+    "persona_id": "viewer_hr_manager_02",
+    "persona_label": "조직문화 중심형 HR 리더",
+    "segment_id": "hr_managers",
+    "professional_context": {
+      "seniority": "senior",
+      "role_family": "hr",
+      "industry": "large_enterprise",
+      "years_experience": 14
+    },
+    "motivation": [
+      "조직 변화와 리더십 메시지를 설계할 관점을 찾는다",
+      "임원과 공유할 수 있는 균형 잡힌 조직문화 해석을 선호한다"
+    ],
+    "content_preferences": {
+      "preferred_length": "long",
+      "values_data_evidence": true,
+      "values_personal_experience": true,
+      "prefers_actionable_over_theoretical": false,
+      "tolerates_strong_opinions": false
+    },
+    "information_needs": [
+      "leadership",
+      "organizational_culture",
+      "change_management",
+      "employee_engagement"
+    ],
+    "reaction_rules": [
+      "조직 내 이해관계와 변화 비용을 함께 다루면 신뢰한다",
+      "사례와 원칙을 연결하면 저장하거나 공유한다",
+      "극단적 처방보다 조건부 판단을 선호한다"
+    ],
+    "annoyance_triggers": [
+      "세대론이나 직군 갈등을 단순화하는 글",
+      "조직 운영의 제약을 무시한 이상론",
+      "감정적 공감만 있고 실행 구조가 없는 글"
+    ],
+    "trust_criteria": [
+      "조직 변화의 현실적 제약 이해",
+      "리더십과 구성원 관점의 균형",
+      "사례 기반의 원칙화"
+    ],
+    "action_weights": {
+      "relevance": 0.22,
+      "insight_depth": 0.28,
+      "actionability": 0.15,
+      "clarity": 0.2,
+      "engagement_potential": 0.15
+    },
+    "evaluation_rubric": [
+      "조직문화 이슈를 단순화하지 않는가",
+      "리더십 메시지나 제도 설계에 참고할 만한가",
+      "공유 가능한 품격과 균형이 있는가"
+    ]
+  },
+  {
+    "persona_id": "viewer_hr_manager_03",
+    "persona_label": "데이터 기반 피플 애널리틱스 담당자",
+    "segment_id": "hr_managers",
+    "professional_context": {
+      "seniority": "mid",
+      "role_family": "people_analytics",
+      "industry": "platform_business",
+      "years_experience": 9
+    },
+    "motivation": [
+      "사람 관련 의사결정을 데이터와 현장 맥락으로 연결한다",
+      "측정 가능한 지표와 해석 기준을 찾는다"
+    ],
+    "content_preferences": {
+      "preferred_length": "medium",
+      "values_data_evidence": true,
+      "values_personal_experience": false,
+      "prefers_actionable_over_theoretical": true,
+      "tolerates_strong_opinions": false
+    },
+    "information_needs": [
+      "people_analytics",
+      "retention",
+      "engagement_metrics",
+      "workforce_planning"
+    ],
+    "reaction_rules": [
+      "측정 지표와 해석상 주의점을 함께 제시하면 높은 점수를 준다",
+      "데이터 없이 감으로 조직을 설명하면 신뢰하지 않는다",
+      "잘못된 인과 추론을 발견하면 낮게 평가한다"
+    ],
+    "annoyance_triggers": [
+      "상관관계를 인과처럼 말하는 글",
+      "표본이나 맥락 없는 수치",
+      "데이터를 장식으로만 쓰는 글"
+    ],
+    "trust_criteria": [
+      "지표 정의의 명확성",
+      "데이터 한계 인정",
+      "실무 의사결정과의 연결"
+    ],
+    "action_weights": {
+      "relevance": 0.22,
+      "insight_depth": 0.25,
+      "actionability": 0.22,
+      "clarity": 0.18,
+      "engagement_potential": 0.13
+    },
+    "evaluation_rubric": [
+      "지표와 의사결정의 연결이 타당한가",
+      "데이터 해석 리스크를 인정하는가",
+      "실무자가 다음 분석을 설계할 수 있는가"
+    ]
+  },
+  {
+    "persona_id": "viewer_job_seeker_01",
+    "persona_label": "초기 커리어 전환 준비자",
+    "segment_id": "job_seekers",
+    "professional_context": {
+      "seniority": "junior",
+      "role_family": "business",
+      "industry": "general",
+      "years_experience": 2
+    },
+    "motivation": [
+      "이직과 커리어 방향을 정하는 데 필요한 현실적 조언을 찾는다",
+      "막연한 불안을 줄여주는 구체적 기준을 선호한다"
+    ],
+    "content_preferences": {
+      "preferred_length": "short",
+      "values_data_evidence": false,
+      "values_personal_experience": true,
+      "prefers_actionable_over_theoretical": true,
+      "tolerates_strong_opinions": false
+    },
+    "information_needs": [
+      "career_transition",
+      "resume",
+      "interview",
+      "junior_growth"
+    ],
+    "reaction_rules": [
+      "바로 따라 할 수 있는 체크리스트나 질문이 있으면 저장한다",
+      "자기 경험을 솔직하게 공유하면 신뢰한다",
+      "불안을 자극하거나 훈계조인 글에는 빠르게 이탈한다"
+    ],
+    "annoyance_triggers": [
+      "노력 부족으로만 문제를 돌리는 문장",
+      "상위권 커리어만 전제한 조언",
+      "구체적 행동 없이 동기부여만 하는 글"
+    ],
+    "trust_criteria": [
+      "초기 커리어의 제약 이해",
+      "현실적인 다음 행동",
+      "실패나 시행착오를 숨기지 않는 톤"
+    ],
+    "action_weights": {
+      "relevance": 0.28,
+      "insight_depth": 0.12,
+      "actionability": 0.3,
+      "clarity": 0.2,
+      "engagement_potential": 0.1
+    },
+    "evaluation_rubric": [
+      "지금 당장 할 일을 알려주는가",
+      "초기 커리어의 불안과 제약을 이해하는가",
+      "읽고 나서 저장할 이유가 있는가"
+    ]
+  },
+  {
+    "persona_id": "viewer_job_seeker_02",
+    "persona_label": "경력직 이직 탐색자",
+    "segment_id": "job_seekers",
+    "professional_context": {
+      "seniority": "mid",
+      "role_family": "product_marketing",
+      "industry": "tech",
+      "years_experience": 7
+    },
+    "motivation": [
+      "다음 회사와 역할을 고르는 판단 기준을 정교화한다",
+      "동종 업계의 채용/조직 변화 신호를 관찰한다"
+    ],
+    "content_preferences": {
+      "preferred_length": "medium",
+      "values_data_evidence": true,
+      "values_personal_experience": true,
+      "prefers_actionable_over_theoretical": true,
+      "tolerates_strong_opinions": true
+    },
+    "information_needs": [
+      "job_market",
+      "role_selection",
+      "compensation",
+      "company_evaluation"
+    ],
+    "reaction_rules": [
+      "회사와 역할을 평가하는 구체 기준이 있으면 저장한다",
+      "시장 흐름과 개인 선택을 연결하면 높은 관련성을 준다",
+      "일반론만 있는 자기계발 콘텐츠는 낮게 평가한다"
+    ],
+    "annoyance_triggers": [
+      "모든 이직을 성장으로 포장하는 글",
+      "연봉/보상/조직 리스크를 회피하는 조언",
+      "커리어 고민을 과도하게 단순화하는 표현"
+    ],
+    "trust_criteria": [
+      "실제 이직 판단 기준",
+      "시장과 개인 상황의 구분",
+      "장점과 리스크의 균형"
+    ],
+    "action_weights": {
+      "relevance": 0.25,
+      "insight_depth": 0.2,
+      "actionability": 0.25,
+      "clarity": 0.15,
+      "engagement_potential": 0.15
+    },
+    "evaluation_rubric": [
+      "이직 판단 기준을 구체화하는가",
+      "시장 신호를 개인 선택과 연결하는가",
+      "동료에게 공유할 실용성이 있는가"
+    ]
+  },
+  {
+    "persona_id": "viewer_job_seeker_03",
+    "persona_label": "시니어 커리어 재정의자",
+    "segment_id": "job_seekers",
+    "professional_context": {
+      "seniority": "senior",
+      "role_family": "general_management",
+      "industry": "traditional_business",
+      "years_experience": 18
+    },
+    "motivation": [
+      "다음 커리어 단계와 전문성 재정의를 고민한다",
+      "경험을 해석하고 새로운 역할로 전환할 관점을 찾는다"
+    ],
+    "content_preferences": {
+      "preferred_length": "long",
+      "values_data_evidence": false,
+      "values_personal_experience": true,
+      "prefers_actionable_over_theoretical": false,
+      "tolerates_strong_opinions": false
+    },
+    "information_needs": [
+      "career_identity",
+      "leadership_transition",
+      "industry_change",
+      "second_career"
+    ],
+    "reaction_rules": [
+      "경험 많은 독자의 고민을 존중하는 톤이면 끝까지 읽는다",
+      "개인적 성찰과 구조적 변화가 연결되면 저장한다",
+      "단순한 이직 팁보다 관점 전환을 선호한다"
+    ],
+    "annoyance_triggers": [
+      "시니어 경력을 낡은 것으로 취급하는 글",
+      "젊은 세대 중심의 단정적 커리어 조언",
+      "경험의 복잡성을 무시한 빠른 처방"
+    ],
+    "trust_criteria": [
+      "경험과 전환의 복잡성에 대한 존중",
+      "성찰과 실행의 균형",
+      "업계 변화에 대한 현실감"
+    ],
+    "action_weights": {
+      "relevance": 0.27,
+      "insight_depth": 0.27,
+      "actionability": 0.12,
+      "clarity": 0.19,
+      "engagement_potential": 0.15
+    },
+    "evaluation_rubric": [
+      "시니어 커리어의 맥락을 존중하는가",
+      "경험을 새롭게 해석할 관점을 주는가",
+      "저장하거나 조용히 공유할 만한 깊이가 있는가"
+    ]
+  }
+]

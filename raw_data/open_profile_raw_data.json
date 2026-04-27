@@ -1,0 +1,886 @@
+[
+  {
+    "open_profile_id": 651,
+    "open_profiles": {
+      "open_profile_id": 651,
+      "career_start_year": 2012,
+      "career_introduction": "기업금융 Relationship Manager",
+      "job_seeking_status": "passive",
+      "public": 1,
+      "created_at": "2019-02-25",
+      "updated_at": "2026-04-20",
+      "user_updated_at": "2026-04-20"
+    },
+    "open_profile_careers": [
+      {
+        "id": 5271413,
+        "open_profile_id": 651,
+        "company": "넥스트증권(주)",
+        "department": "IB사업본부/유동화금융1팀",
+        "position": "부장",
+        "joined_date": "2025-04-01",
+        "left_date": null,
+        "present": 1,
+        "main": 1
+      },
+      {
+        "id": 815,
+        "open_profile_id": 651,
+        "company": "현대커머셜주식회사",
+        "department": "기업금융영업팀",
+        "position": null,
+        "joined_date": "2012-09-01",
+        "left_date": "2024-05-01",
+        "present": 0,
+        "main": 0
+      }
+    ],
+    "open_profile_job_categories": [
+      {
+        "job_category_id": 271,
+        "level1": "금융",
+        "level2": "구조화금융",
+        "main": 1,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 267,
+        "level1": "금융",
+        "level2": "DCM",
+        "main": 0,
+        "supposition": 0
+      }
+    ],
+    "open_profile_job_position": [
+      {
+        "open_profile_career_id": 5271413,
+        "position": "부장",
+        "position_group": "관리자급"
+      }
+    ],
+    "open_profile_academic_histories": [
+      {
+        "school": "연세대학교(원주)",
+        "degree": null,
+        "degree_group": "대학교(4년)",
+        "major": null,
+        "joined_date": null,
+        "left_date": null,
+        "final": 1
+      }
+    ]
+  },
+  {
+    "open_profile_id": 89423,
+    "open_profiles": {
+      "open_profile_id": 89423,
+      "career_start_year": 2011,
+      "career_introduction": "비즈니스 구조를 설계하고 실행하는 Execution-Driven Business Strategist. 16년간 스타트업~대형플랫폼 신규사업 런칭·수익모델 설계·IR 전 사이클 주도",
+      "job_seeking_status": "passive",
+      "public": 1,
+      "created_at": "2019-07-01",
+      "updated_at": "2026-03-22",
+      "user_updated_at": "2026-03-22"
+    },
+    "open_profile_careers": [
+      {
+        "id": 4808024,
+        "open_profile_id": 89423,
+        "company": "버킷플레이스(오늘의집)",
+        "department": "커머스부문 커머스기획본부",
+        "position": "본부장",
+        "joined_date": "2024-09-01",
+        "left_date": null,
+        "present": 1,
+        "main": 1
+      },
+      {
+        "id": 1950068,
+        "open_profile_id": 89423,
+        "company": "알엑스씨(PRIZM)",
+        "department": "사업운영실·O2O사업실",
+        "position": "실장",
+        "joined_date": "2021-05-01",
+        "left_date": "2024-08-01",
+        "present": 0,
+        "main": 0
+      },
+      {
+        "id": 1862153,
+        "open_profile_id": 89423,
+        "company": "마켓잇",
+        "department": "사업개발실",
+        "position": "실장",
+        "joined_date": "2019-12-01",
+        "left_date": "2021-01-01",
+        "present": 0,
+        "main": 0
+      },
+      {
+        "id": 110843,
+        "open_profile_id": 89423,
+        "company": "(주)아고",
+        "department": "미디어커머스전략팀",
+        "position": "팀장",
+        "joined_date": "2018-03-01",
+        "left_date": "2019-07-01",
+        "present": 0,
+        "main": 0
+      },
+      {
+        "id": 111591,
+        "open_profile_id": 89423,
+        "company": "(주)크레이버코퍼레이션",
+        "department": "Strategy",
+        "position": "Head of new business",
+        "joined_date": "2017-12-01",
+        "left_date": "2018-03-01",
+        "present": 0,
+        "main": 0
+      },
+      {
+        "id": 111592,
+        "open_profile_id": 89423,
+        "company": "(주)부릉",
+        "department": "사업개발/마케팅·PR",
+        "position": "팀장",
+        "joined_date": "2016-07-01",
+        "left_date": "2017-12-01",
+        "present": 0,
+        "main": 0
+      },
+      {
+        "id": 111594,
+        "open_profile_id": 89423,
+        "company": "(주)아고",
+        "department": "사업기획팀",
+        "position": "팀장",
+        "joined_date": "2011-02-01",
+        "left_date": "2016-06-01",
+        "present": 0,
+        "main": 0
+      }
+    ],
+    "open_profile_job_categories": [
+      {
+        "job_category_id": 161,
+        "level1": "경영·전략·기획",
+        "level2": "PM·PMO(프로젝트)",
+        "main": 1,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 153,
+        "level1": "경영·전략·기획",
+        "level2": "사업전략·기획",
+        "main": 0,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 157,
+        "level1": "경영·전략·기획",
+        "level2": "사업개발(BD)",
+        "main": 0,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 160,
+        "level1": "경영·전략·기획",
+        "level2": "사업운영",
+        "main": 0,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 154,
+        "level1": "경영·전략·기획",
+        "level2": "신사업 기획·개발",
+        "main": 0,
+        "supposition": 0
+      }
+    ],
+    "open_profile_job_position": [
+      {
+        "open_profile_career_id": 4808024,
+        "position": "임원",
+        "position_group": "임원급"
+      }
+    ],
+    "open_profile_academic_histories": [
+      {
+        "school": "연세대학교",
+        "degree": "학사",
+        "degree_group": "대학교(4년)",
+        "major": "경영학",
+        "joined_date": "2005",
+        "left_date": "2013",
+        "final": 1
+      }
+    ]
+  },
+  {
+    "open_profile_id": 127963,
+    "open_profiles": {
+      "open_profile_id": 127963,
+      "career_start_year": 2016,
+      "career_introduction": "다국적기업 M&A 전문가. 한국·태국·미국 KPMG/PwC 경험. WISE Employment Korea 초대 법인장 역임. Cross-border M&A, PMI, FDD, HRDD, ITDD 전문",
+      "job_seeking_status": "passive",
+      "public": 1,
+      "created_at": "2019-08-14",
+      "updated_at": "2026-03-28",
+      "user_updated_at": "2026-03-28"
+    },
+    "open_profile_careers": [
+      {
+        "id": 5605884,
+        "open_profile_id": 127963,
+        "company": "삼일회계법인(PwC)",
+        "department": "Deals DDV & DS",
+        "position": "Senior Manager",
+        "joined_date": "2025-06-01",
+        "left_date": null,
+        "present": 1,
+        "main": 1
+      },
+      {
+        "id": 3518340,
+        "open_profile_id": 127963,
+        "company": "와이즈임플로이먼트코리아",
+        "department": null,
+        "position": "법인장(CEO)",
+        "joined_date": "2023-07-01",
+        "left_date": "2025-01-01",
+        "present": 0,
+        "main": 0
+      },
+      {
+        "id": 170842,
+        "open_profile_id": 127963,
+        "company": "삼정회계법인(KPMG)",
+        "department": "Deal Advisory Ⅲ (Cross-border)",
+        "position": "부장",
+        "joined_date": "2018-08-01",
+        "left_date": "2023-06-01",
+        "present": 0,
+        "main": 0
+      },
+      {
+        "id": 617014,
+        "open_profile_id": 127963,
+        "company": "KPMG Thailand",
+        "department": "Risk Consulting",
+        "position": "Senior Associate",
+        "joined_date": "2016-09-01",
+        "left_date": "2018-08-01",
+        "present": 0,
+        "main": 0
+      },
+      {
+        "id": 617012,
+        "open_profile_id": 127963,
+        "company": "KPMG New York",
+        "department": "Risk Consulting",
+        "position": "Associate",
+        "joined_date": "2015-07-01",
+        "left_date": "2016-09-01",
+        "present": 0,
+        "main": 0
+      }
+    ],
+    "open_profile_job_categories": [
+      {
+        "job_category_id": 151,
+        "level1": "경영·전략·기획",
+        "level2": "법인대표·CEO",
+        "main": 1,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 161,
+        "level1": "경영·전략·기획",
+        "level2": "PM·PMO(프로젝트)",
+        "main": 0,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 170,
+        "level1": "재무·회계·세무",
+        "level2": "해외공인회계사",
+        "main": 0,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 153,
+        "level1": "경영·전략·기획",
+        "level2": "사업전략·기획",
+        "main": 0,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 272,
+        "level1": "금융",
+        "level2": "M&A Advisory",
+        "main": 0,
+        "supposition": 0
+      }
+    ],
+    "open_profile_job_position": [
+      {
+        "open_profile_career_id": 5605884,
+        "position": "차장",
+        "position_group": "관리자급"
+      }
+    ],
+    "open_profile_academic_histories": [
+      {
+        "school": "뉴욕주립대학교",
+        "degree": "학사",
+        "degree_group": "대학교(4년)",
+        "major": "회계학, 금융학",
+        "joined_date": "2008",
+        "left_date": "2015",
+        "final": 1
+      }
+    ]
+  },
+  {
+    "open_profile_id": 262223,
+    "open_profiles": {
+      "open_profile_id": 262223,
+      "career_start_year": 2000,
+      "career_introduction": "씨엔티테크 창업자·대표이사 CEO. 초기투자액셀러레이터협회장. 서강대·동국대 교수. 전자신문·파이낸셜뉴스 칼럼니스트",
+      "job_seeking_status": "passive",
+      "public": 1,
+      "created_at": "2019-09-09",
+      "updated_at": "2026-04-09",
+      "user_updated_at": "2026-04-09"
+    },
+    "open_profile_careers": [
+      {
+        "id": 324320,
+        "open_profile_id": 262223,
+        "company": "씨엔티테크",
+        "department": "CEO",
+        "position": "대표",
+        "joined_date": "2003-07-01",
+        "left_date": null,
+        "present": 1,
+        "main": 1
+      }
+    ],
+    "open_profile_job_categories": [
+      {
+        "job_category_id": 151,
+        "level1": "경영·전략·기획",
+        "level2": "법인대표·CEO",
+        "main": 1,
+        "supposition": 1
+      },
+      {
+        "job_category_id": 279,
+        "level1": "금융",
+        "level2": "엑셀러레이터",
+        "main": 0,
+        "supposition": 1
+      }
+    ],
+    "open_profile_job_position": [
+      {
+        "open_profile_career_id": 324320,
+        "position": "사장",
+        "position_group": "대표급"
+      }
+    ],
+    "open_profile_academic_histories": [
+      {
+        "school": "서강대학교",
+        "degree": "박사",
+        "degree_group": "박사",
+        "major": "경영학",
+        "joined_date": "2022-02",
+        "left_date": "2025-02",
+        "final": 1
+      },
+      {
+        "school": "한국과학기술원(KAIST)",
+        "degree": "석사",
+        "degree_group": "석사",
+        "major": "전산학",
+        "joined_date": "1999-02",
+        "left_date": "2001-02",
+        "final": 0
+      },
+      {
+        "school": "동국대학교",
+        "degree": "학사",
+        "degree_group": "대학교(4년)",
+        "major": "컴퓨터공학",
+        "joined_date": "1996-02",
+        "left_date": "1999-02",
+        "final": 0
+      }
+    ]
+  },
+  {
+    "open_profile_id": 757767,
+    "open_profiles": {
+      "open_profile_id": 757767,
+      "career_start_year": 2017,
+      "career_introduction": "IT스타트업 전문 기자 약 6년. 기획력·리서치·스토리텔링·글쓰기 강점. 유료 콘텐츠(스타트업DB) 제작 총괄 경험",
+      "job_seeking_status": "passive",
+      "public": 1,
+      "created_at": "2020-10-26",
+      "updated_at": "2026-04-20",
+      "user_updated_at": "2026-04-20"
+    },
+    "open_profile_careers": [
+      {
+        "id": 1086227,
+        "open_profile_id": 757767,
+        "company": "아웃스탠딩",
+        "department": null,
+        "position": "기자",
+        "joined_date": "2026-01-01",
+        "left_date": null,
+        "present": 1,
+        "main": 1
+      },
+      {
+        "id": 5061007,
+        "open_profile_id": 757767,
+        "company": "중앙일보(주)",
+        "department": null,
+        "position": "기자",
+        "joined_date": "2024-12-26",
+        "left_date": "2026-01-01",
+        "present": 0,
+        "main": 0
+      },
+      {
+        "id": 6139142,
+        "open_profile_id": 757767,
+        "company": "(주)아웃스탠딩컴퍼니",
+        "department": null,
+        "position": "기자",
+        "joined_date": "2020-10-05",
+        "left_date": "2024-12-24",
+        "present": 0,
+        "main": 0
+      },
+      {
+        "id": 1086229,
+        "open_profile_id": 757767,
+        "company": "언론중재위원회",
+        "department": "심의실",
+        "position": "시정권고 심의원",
+        "joined_date": "2019-01-01",
+        "left_date": "2020-10-01",
+        "present": 0,
+        "main": 0
+      },
+      {
+        "id": 1982182,
+        "open_profile_id": 757767,
+        "company": "(주)스타뉴스",
+        "department": null,
+        "position": "기자",
+        "joined_date": "2018-04-02",
+        "left_date": "2018-08-11",
+        "present": 0,
+        "main": 0
+      },
+      {
+        "id": 1982181,
+        "open_profile_id": 757767,
+        "company": "주식회사 한국뉴미디어",
+        "department": null,
+        "position": "기자",
+        "joined_date": "2017-04-17",
+        "left_date": "2018-04-01",
+        "present": 0,
+        "main": 0
+      }
+    ],
+    "open_profile_job_categories": [
+      {
+        "job_category_id": 443,
+        "level1": "방송·미디어·문화",
+        "level2": "기자·리포터",
+        "main": 1,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 279,
+        "level1": "금융",
+        "level2": "엑셀러레이터",
+        "main": 0,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 293,
+        "level1": "금융",
+        "level2": "투자심사",
+        "main": 0,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 439,
+        "level1": "방송·미디어·문화",
+        "level2": "콘텐츠기획",
+        "main": 0,
+        "supposition": 0
+      }
+    ],
+    "open_profile_job_position": [
+      {
+        "open_profile_career_id": 1086227,
+        "position": "과장",
+        "position_group": "관리자급"
+      }
+    ],
+    "open_profile_academic_histories": [
+      {
+        "school": "경기대학교(수원)",
+        "degree": "학사",
+        "degree_group": "대학교(4년)",
+        "major": "교정보호학, 언론미디어학",
+        "joined_date": "2009",
+        "left_date": "2017",
+        "final": 1
+      }
+    ]
+  },
+  {
+    "open_profile_id": 973969,
+    "open_profiles": {
+      "open_profile_id": 973969,
+      "career_start_year": 2013,
+      "career_introduction": "프로젝트 썸원 운영. 유료 멤버십 '썸원 프라임' + 무료 '썸원 레터' 운영. 콘텐츠·미디어·스타트업씬 경력",
+      "job_seeking_status": "inactive",
+      "public": 1,
+      "created_at": "2021-05-04",
+      "updated_at": "2026-04-08",
+      "user_updated_at": "2026-04-08"
+    },
+    "open_profile_careers": [
+      {
+        "id": 1332441,
+        "open_profile_id": 973969,
+        "company": "Project Somewon",
+        "department": null,
+        "position": "Content Owner",
+        "joined_date": null,
+        "left_date": null,
+        "present": 1,
+        "main": 1
+      }
+    ],
+    "open_profile_job_categories": [
+      {
+        "job_category_id": 439,
+        "level1": "방송·미디어·문화",
+        "level2": "콘텐츠기획",
+        "main": 1,
+        "supposition": 0
+      }
+    ],
+    "open_profile_job_position": [
+      {
+        "open_profile_career_id": 1332441,
+        "position": "과장",
+        "position_group": "관리자급"
+      }
+    ],
+    "open_profile_academic_histories": [
+      {
+        "school": "경희대학교",
+        "degree": "학사",
+        "degree_group": "대학교(4년)",
+        "major": "언론정보학",
+        "joined_date": "2004",
+        "left_date": "2012",
+        "final": 1
+      }
+    ]
+  },
+  {
+    "open_profile_id": 3446155,
+    "open_profiles": {
+      "open_profile_id": 3446155,
+      "career_start_year": 2011,
+      "career_introduction": "반짝이는 유행보다 변하지 않는 본질의 힘을 믿는 16년차 경제·경영서 기획자",
+      "job_seeking_status": "to_be_determined",
+      "public": 1,
+      "created_at": "2025-01-16",
+      "updated_at": "2026-03-31",
+      "user_updated_at": "2026-03-31"
+    },
+    "open_profile_careers": [
+      {
+        "id": 6528756,
+        "open_profile_id": 3446155,
+        "company": "Veritas Books",
+        "department": null,
+        "position": "출판 기획·편집자",
+        "joined_date": "2023-03-01",
+        "left_date": null,
+        "present": 1,
+        "main": 1
+      }
+    ],
+    "open_profile_job_categories": [
+      {
+        "job_category_id": 439,
+        "level1": "방송·미디어·문화",
+        "level2": "콘텐츠기획",
+        "main": 1,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 449,
+        "level1": "방송·미디어·문화",
+        "level2": "출판편집·교정",
+        "main": 0,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 448,
+        "level1": "방송·미디어·문화",
+        "level2": "출판기획",
+        "main": 0,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 444,
+        "level1": "방송·미디어·문화",
+        "level2": "작가",
+        "main": 0,
+        "supposition": 0
+      }
+    ],
+    "open_profile_job_position": [
+      {
+        "open_profile_career_id": 6528756,
+        "position": "기타",
+        "position_group": "기타"
+      }
+    ],
+    "open_profile_academic_histories": []
+  },
+  {
+    "open_profile_id": 3446339,
+    "open_profiles": {
+      "open_profile_id": 3446339,
+      "career_start_year": 2019,
+      "career_introduction": "도구가 바뀌면 사고의 방식도 바뀐다. 최신 테크 트렌드와 생산성 도구를 실무에 바로 적용하는 법 공유",
+      "job_seeking_status": "to_be_determined",
+      "public": 1,
+      "created_at": "2025-01-16",
+      "updated_at": "2026-04-02",
+      "user_updated_at": "2026-04-02"
+    },
+    "open_profile_careers": [
+      {
+        "id": 6537032,
+        "open_profile_id": 3446339,
+        "company": "AETHER Tech",
+        "department": null,
+        "position": null,
+        "joined_date": "2025-02-01",
+        "left_date": null,
+        "present": 1,
+        "main": 1
+      }
+    ],
+    "open_profile_job_categories": [
+      {
+        "job_category_id": 164,
+        "level1": "서비스기획·운영",
+        "level2": "서비스기획·PM/PO(프로덕트)",
+        "main": 1,
+        "supposition": 0
+      }
+    ],
+    "open_profile_job_position": [
+      {
+        "open_profile_career_id": 6537032,
+        "position": "대리",
+        "position_group": "Staff급"
+      }
+    ],
+    "open_profile_academic_histories": []
+  },
+  {
+    "open_profile_id": 3770799,
+    "open_profiles": {
+      "open_profile_id": 3770799,
+      "career_start_year": 2012,
+      "career_introduction": "70만 명을 만난 진로교육가. 스팀21 대표. 진로베스트셀러 4권 저자",
+      "job_seeking_status": "inactive",
+      "public": 1,
+      "created_at": "2026-02-02",
+      "updated_at": "2026-03-19",
+      "user_updated_at": "2026-03-19"
+    },
+    "open_profile_careers": [
+      {
+        "id": 6251901,
+        "open_profile_id": 3770799,
+        "company": "스팀21",
+        "department": null,
+        "position": "CEO & 작가",
+        "joined_date": "2015-08-01",
+        "left_date": null,
+        "present": 1,
+        "main": 1
+      }
+    ],
+    "open_profile_job_categories": [
+      {
+        "job_category_id": 474,
+        "level1": "교육",
+        "level2": "교육기획",
+        "main": 1,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 481,
+        "level1": "교육",
+        "level2": "기타 교육직",
+        "main": 0,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 475,
+        "level1": "교육",
+        "level2": "기술·전문 교육 강사",
+        "main": 0,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 480,
+        "level1": "교육",
+        "level2": "학원·학교·방문 강사",
+        "main": 0,
+        "supposition": 0
+      }
+    ],
+    "open_profile_job_position": [
+      {
+        "open_profile_career_id": 6251901,
+        "position": "사장",
+        "position_group": "대표급"
+      }
+    ],
+    "open_profile_academic_histories": [
+      {
+        "school": "한양대학교(에리카)",
+        "degree": "휴학",
+        "degree_group": "대학교(4년)",
+        "major": "건축학",
+        "joined_date": "2005-02",
+        "left_date": null,
+        "final": 1
+      }
+    ]
+  },
+  {
+    "open_profile_id": 3778558,
+    "open_profiles": {
+      "open_profile_id": 3778558,
+      "career_start_year": 1995,
+      "career_introduction": "프로야구 프런트 26년(LG·SK·SSG). 한국시리즈 5회 우승. 2025년 『야구×수학』 출간. 2026년 신간 예정",
+      "job_seeking_status": "active",
+      "public": 1,
+      "created_at": "2026-02-07",
+      "updated_at": "2026-03-22",
+      "user_updated_at": "2026-03-22"
+    },
+    "open_profile_careers": [
+      {
+        "id": 6485335,
+        "open_profile_id": 3778558,
+        "company": "주식회사 베이스볼인텔리전스",
+        "department": null,
+        "position": null,
+        "joined_date": "2024-01-02",
+        "left_date": null,
+        "present": 1,
+        "main": 1
+      },
+      {
+        "id": 6294947,
+        "open_profile_id": 3778558,
+        "company": "KEYSTONE SPORTS GROUP",
+        "department": null,
+        "position": "대표",
+        "joined_date": "2025-01-01",
+        "left_date": null,
+        "present": 1,
+        "main": 0
+      },
+      {
+        "id": 6289918,
+        "open_profile_id": 3778558,
+        "company": "주식회사신세계야구단(SSG)",
+        "department": "단장실",
+        "position": "단장",
+        "joined_date": "2001-12-01",
+        "left_date": "2022-12-01",
+        "present": 0,
+        "main": 0
+      },
+      {
+        "id": 6289926,
+        "open_profile_id": 3778558,
+        "company": "(주)LG스포츠",
+        "department": null,
+        "position": null,
+        "joined_date": "1997-07-01",
+        "left_date": "2001-10-01",
+        "present": 0,
+        "main": 0
+      }
+    ],
+    "open_profile_job_categories": [
+      {
+        "job_category_id": 152,
+        "level1": "경영·전략·기획",
+        "level2": "전략기획(Corporate)",
+        "main": 1,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 236,
+        "level1": "홍보·대외협력",
+        "level2": "홍보기획",
+        "main": 0,
+        "supposition": 0
+      },
+      {
+        "job_category_id": 235,
+        "level1": "홍보·대외협력",
+        "level2": "홍보·PR",
+        "main": 0,
+        "supposition": 0
+      }
+    ],
+    "open_profile_job_position": [
+      {
+        "open_profile_career_id": 6294947,
+        "position": "사장",
+        "position_group": "대표급"
+      }
+    ],
+    "open_profile_academic_histories": [
+      {
+        "school": "연세대학교",
+        "degree": "학사",
+        "degree_group": "대학교(4년)",
+        "major": "경영학",
+        "joined_date": "1990",
+        "left_date": "1994",
+        "final": 1
+      }
+    ]
+  }
+]

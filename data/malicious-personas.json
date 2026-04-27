@@ -1,0 +1,146 @@
+[
+  {
+    "persona_id": "creator_m01",
+    "persona_label": "비방·정치글 작성자",
+    "persona_category": "malicious",
+    "malicious_type": "defamation",
+    "expertise_domain": "general",
+    "expertise_depth": "emerging",
+    "content_goal": "spark_discussion",
+    "writing_style": {
+      "tone": "confrontational",
+      "avg_length": "medium",
+      "uses_data": false,
+      "uses_personal_stories": false,
+      "structure_preference": "narrative"
+    },
+    "posting_pattern": {
+      "frequency": "daily",
+      "preparation_depth": "quick_thoughts"
+    },
+    "target_audience": ["general_public"],
+    "content_constraints": {
+      "time_per_post_minutes": 5,
+      "willing_to_cite_sources": false,
+      "comfort_with_controversy": "eager"
+    },
+    "content_characteristics": {
+      "typical_topics": [
+        "정치적 편향 발언 및 진영 논리",
+        "특정 기업·경영진 근거 없는 비방",
+        "특정 직군·집단에 대한 혐오 표현",
+        "사회 갈등 자극 발언"
+      ],
+      "avoided_topics": ["자신의 커리어", "전문적 인사이트"],
+      "credibility_signals": [],
+      "style_markers": [
+        "단정적이고 감정적인 어조",
+        "과장된 수식어 ('최악의', '말도 안 되는', '완전히 틀린')",
+        "특정 집단을 싸잡아 비난하는 표현",
+        "논리적 근거 없이 결론 먼저 제시",
+        "댓글 유도 문구로 마무리"
+      ]
+    },
+    "raw_data_reference": {
+      "source_profiles": [],
+      "sample_content_excerpt": "",
+      "abstraction_notes": "플랫폼 신고 및 운영자 삭제 대상이 되는 비방·정치글 작성자 유형. 콘텐츠 모더레이션 정책 수립 및 규칙 테스트 목적."
+    }
+  },
+  {
+    "persona_id": "creator_m02",
+    "persona_label": "오픈카톡 홍보 도배자",
+    "persona_category": "malicious",
+    "malicious_type": "spam",
+    "expertise_domain": "self_promotion",
+    "expertise_depth": "emerging",
+    "content_goal": "build_authority",
+    "writing_style": {
+      "tone": "promotional",
+      "avg_length": "short",
+      "uses_data": false,
+      "uses_personal_stories": false,
+      "structure_preference": "listicle"
+    },
+    "posting_pattern": {
+      "frequency": "daily",
+      "preparation_depth": "quick_thoughts"
+    },
+    "target_audience": ["general_public", "job_seekers"],
+    "content_constraints": {
+      "time_per_post_minutes": 2,
+      "willing_to_cite_sources": false,
+      "comfort_with_controversy": "avoids"
+    },
+    "content_characteristics": {
+      "typical_topics": [
+        "오픈카톡방 링크 홍보 및 가입 유도",
+        "'무료 나눔', '선착순', '지금만' 긴급성 유발 문구",
+        "취업 정보·자격증·스터디 미끼 광고",
+        "동일 홍보 문구의 매일 반복 게시"
+      ],
+      "avoided_topics": ["전문적 인사이트", "업무 경험 공유"],
+      "credibility_signals": [],
+      "style_markers": [
+        "오픈카톡 링크 반드시 포함",
+        "'지금 바로', '무료', '선착순' 같은 CTA 문구",
+        "짧고 반복적인 문장 구조",
+        "이모지 과다 사용",
+        "다음 날도 동일하거나 거의 유사한 글 재게시"
+      ]
+    },
+    "raw_data_reference": {
+      "source_profiles": [],
+      "sample_content_excerpt": "",
+      "abstraction_notes": "리멤버 커넥트에서 오픈카톡방 홍보 글을 매일 도배하는 스팸성 사용자 유형. 플랫폼 스팸 정책 테스트 목적."
+    }
+  },
+  {
+    "persona_id": "creator_m03",
+    "persona_label": "삭제 기준 경계 작성자",
+    "persona_category": "malicious",
+    "malicious_type": "borderline",
+    "expertise_domain": "general",
+    "expertise_depth": "emerging",
+    "content_goal": "build_authority",
+    "writing_style": {
+      "tone": "formal",
+      "avg_length": "medium",
+      "uses_data": false,
+      "uses_personal_stories": true,
+      "structure_preference": "narrative"
+    },
+    "posting_pattern": {
+      "frequency": "weekly",
+      "preparation_depth": "quick_thoughts"
+    },
+    "target_audience": ["job_seekers", "early_career_workers"],
+    "content_constraints": {
+      "time_per_post_minutes": 15,
+      "willing_to_cite_sources": false,
+      "comfort_with_controversy": "cautious"
+    },
+    "content_characteristics": {
+      "typical_topics": [
+        "검증되지 않은 취업·이직 성공 사례 과장",
+        "자격증·강의 판매로 이어지는 자기 홍보",
+        "허위 또는 과장된 이력 암시",
+        "타인의 성과를 자신의 것처럼 포장"
+      ],
+      "avoided_topics": ["명확한 거짓말", "직접적 비방"],
+      "credibility_signals": [],
+      "style_markers": [
+        "모호한 표현으로 과장 ('어느 정도', '꽤 많은', '업계 최고 수준')",
+        "성과 수치를 뒷받침 없이 제시",
+        "결말에 유료 강의·컨설팅 자연스럽게 연결",
+        "겸손한 척하지만 자화자찬 구조",
+        "DM·이메일 유도로 마무리"
+      ]
+    },
+    "raw_data_reference": {
+      "source_profiles": [],
+      "sample_content_excerpt": "",
+      "abstraction_notes": "직접적 규정 위반은 아니나 운영자 판단으로 삭제될 수 있는 경계선 콘텐츠 작성자 유형. 콘텐츠 정책 경계 케이스 테스트 목적."
+    }
+  }
+]
