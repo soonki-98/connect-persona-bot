@@ -2,6 +2,7 @@ import type { CreatorPersona, ViewerPersona } from "./types";
 import creatorPersonasRaw from "../../data/creator-personas-v2.json";
 import viewerPersonasRaw from "../../data/viewer-personas-v1.json";
 import maliciousPersonasRaw from "../../data/malicious-personas.json";
+import maliciousViewersRaw from "../../data/malicious-viewers-v1.json";
 import rawContentsRaw from "../../raw_data/contents_raw_data.json";
 
 interface RawContentEntry {
@@ -48,4 +49,8 @@ export function loadViewerPersonas(): ViewerPersona[] {
 
 export function loadMaliciousPersonas(): CreatorPersona[] {
   return maliciousPersonasRaw as CreatorPersona[];
+}
+
+export function loadMaliciousViewerPersonas(): ViewerPersona[] {
+  return maliciousViewersRaw as ViewerPersona[];
 }

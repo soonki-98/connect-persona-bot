@@ -86,6 +86,7 @@ export function Sidebar({
               <option value="tech_founders">Tech founders</option>
               <option value="hr_managers">HR managers</option>
               <option value="job_seekers">Job seekers</option>
+              <option value="malicious">악성 유저</option>
             </select>
           </label>
           <label>
@@ -97,6 +98,7 @@ export function Sidebar({
               <option value="3">3</option>
               <option value="1">1</option>
               <option value="9">9</option>
+              <option value="12">12</option>
             </select>
           </label>
         </div>

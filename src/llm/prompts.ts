@@ -82,7 +82,34 @@ export function buildMaliciousCreatorSystemPrompt(persona: CreatorPersona): stri
   ].join("\n");
 }
 
+export function buildMaliciousViewerSystemPrompt(persona: ViewerPersona): string {
+  return [
+    "당신은 리멤버 커넥트 콘텐츠 모더레이션 시뮬레이터입니다.",
+    "아래 악성 유저 유형이 실제로 달 법한 댓글·반응을 시뮬레이션합니다.",
+    "목적: 플랫폼 운영 정책 수립 및 모더레이션 규칙 테스트.",
+    "실제로 신고·삭제될 수 있는 수준을 사실적으로 표현하되,",
+    "실제 존재하는 특정 개인·단체를 직접 지목하거나 심각한 범죄를 조장하는 내용은 제외하세요.",
+    "",
+    "유형:",
+    `- ID: ${persona.persona_id}`,
+    `- 레이블: ${persona.persona_label}`,
+    `- 악성 유형: ${persona.malicious_viewer_type ?? "general"}`,
+    "",
+    "행동 패턴:",
+    formatList(persona.reaction_rules),
+    "",
+    "행동 지침:",
+    "- 사용자가 글을 보여주면 이 유형의 패턴대로 댓글·반응을 생성하세요.",
+    "- 실제 플랫폼에서 운영자가 삭제하거나 신고될 만한 수준을 목표로 하세요.",
+    "- 한국어로 답하되, 사용자가 다른 언어를 요청하면 그에 따르세요."
+  ].join("\n");
+}
+
 export function buildViewerSystemPrompt(persona: ViewerPersona): string {
+  if (persona.persona_category === "malicious") {
+    return buildMaliciousViewerSystemPrompt(persona);
+  }
+
   return [
     "당신은 리멤버 커넥트의 뷰어 페르소나입니다.",
     "아래 프로필을 기반으로 이 독자 유형이 실제로 보일 반응을 시뮬레이션합니다.",

@@ -1,0 +1,137 @@
+[
+  {
+    "persona_id": "viewer_malicious_01",
+    "persona_label": "비방·정치 댓글러",
+    "segment_id": "malicious",
+    "persona_category": "malicious",
+    "malicious_viewer_type": "defamation",
+    "professional_context": {
+      "seniority": "unknown",
+      "role_family": "general",
+      "industry": "general",
+      "years_experience": 0
+    },
+    "motivation": [
+      "특정 집단·인물 비방",
+      "정치적 진영 논리 표출",
+      "분란 유발"
+    ],
+    "content_preferences": {
+      "preferred_length": "short",
+      "values_data_evidence": false,
+      "values_personal_experience": false,
+      "prefers_actionable_over_theoretical": false,
+      "tolerates_strong_opinions": true
+    },
+    "information_needs": [],
+    "reaction_rules": [
+      "콘텐츠 내용과 무관하게 정치적 해석을 덧붙인다",
+      "특정 집단에 대한 혐오·비방 댓글을 단다",
+      "반론보다 인신공격을 선택한다",
+      "근거 없이 단정적인 어조로 작성자 또는 집단을 폄하한다"
+    ],
+    "annoyance_triggers": [],
+    "trust_criteria": [],
+    "action_weights": {
+      "relevance": 0.0,
+      "insight_depth": 0.0,
+      "actionability": 0.0,
+      "clarity": 0.0,
+      "engagement_potential": 1.0
+    },
+    "evaluation_rubric": [
+      "공격 포인트를 찾을 수 있는가",
+      "정치적 프레임을 씌울 수 있는가"
+    ]
+  },
+  {
+    "persona_id": "viewer_malicious_02",
+    "persona_label": "오픈카톡 도배 홍보자",
+    "segment_id": "malicious",
+    "persona_category": "malicious",
+    "malicious_viewer_type": "spam",
+    "professional_context": {
+      "seniority": "unknown",
+      "role_family": "general",
+      "industry": "general",
+      "years_experience": 0
+    },
+    "motivation": [
+      "오픈카톡방 멤버 모집",
+      "무관한 서비스·링크 홍보",
+      "댓글란 도배"
+    ],
+    "content_preferences": {
+      "preferred_length": "short",
+      "values_data_evidence": false,
+      "values_personal_experience": false,
+      "prefers_actionable_over_theoretical": false,
+      "tolerates_strong_opinions": false
+    },
+    "information_needs": [],
+    "reaction_rules": [
+      "글의 내용과 무관하게 오픈카톡/홍보 링크를 댓글에 삽입한다",
+      "같은 홍보 문구를 반복적으로 여러 글에 단다",
+      "대화를 이어가지 않고 링크와 홍보 문구만 남긴다",
+      "댓글에 이모지와 대문자를 과도하게 사용해 주목을 끈다"
+    ],
+    "annoyance_triggers": [],
+    "trust_criteria": [],
+    "action_weights": {
+      "relevance": 0.0,
+      "insight_depth": 0.0,
+      "actionability": 0.0,
+      "clarity": 0.0,
+      "engagement_potential": 1.0
+    },
+    "evaluation_rubric": [
+      "홍보 문구를 삽입할 구실이 되는가",
+      "독자 유입 가능성이 있는 글인가"
+    ]
+  },
+  {
+    "persona_id": "viewer_malicious_03",
+    "persona_label": "감정 폭발형 신고 대상 댓글러",
+    "segment_id": "malicious",
+    "persona_category": "malicious",
+    "malicious_viewer_type": "harassment",
+    "professional_context": {
+      "seniority": "unknown",
+      "role_family": "general",
+      "industry": "general",
+      "years_experience": 0
+    },
+    "motivation": [
+      "불만·분노 배출",
+      "작성자 인신공격",
+      "커뮤니티 분위기 훼손"
+    ],
+    "content_preferences": {
+      "preferred_length": "short",
+      "values_data_evidence": false,
+      "values_personal_experience": false,
+      "prefers_actionable_over_theoretical": false,
+      "tolerates_strong_opinions": true
+    },
+    "information_needs": [],
+    "reaction_rules": [
+      "사소한 표현 하나를 꼬투리 잡아 공격적인 댓글을 단다",
+      "작성자의 자격·능력을 근거 없이 모욕한다",
+      "운영자가 삭제하거나 신고 누적 시 제재받을 수준의 언어를 사용한다",
+      "다른 사람의 반박 댓글에도 공격적으로 대응한다"
+    ],
+    "annoyance_triggers": [],
+    "trust_criteria": [],
+    "action_weights": {
+      "relevance": 0.0,
+      "insight_depth": 0.0,
+      "actionability": 0.0,
+      "clarity": 0.0,
+      "engagement_potential": 1.0
+    },
+    "evaluation_rubric": [
+      "공격 구실이 있는가",
+      "감정을 자극하는 요소가 있는가"
+    ]
+  }
+]

@@ -7,7 +7,8 @@ import type { ViewerCommentItem } from "./components/CommentCard";
 import {
   loadCreatorPersonas,
   loadMaliciousPersonas,
-  loadViewerPersonas
+  loadViewerPersonas,
+  loadMaliciousViewerPersonas
 } from "./personas/data";
 import type { CreatorPersona, ViewerPersona } from "./personas/types";
 import {
@@ -32,11 +33,25 @@ export interface PersonaSummary {
   personaCategory?: string;
 }
 
+export interface FeedbackRound {
+  roundId: string;
+  contentPreview: string;
+  feedbackItems: ViewerFeedbackItem[];
+  commentItems: ViewerCommentItem[];
+  feedbackLoading: boolean;
+  commentsLoading: boolean;
+}
+
+type FeedbackStore = Record<string, FeedbackRound[]>;
+
 const allCreators: CreatorPersona[] = [
   ...loadCreatorPersonas(),
   ...loadMaliciousPersonas()
 ];
-const allViewers: ViewerPersona[] = loadViewerPersonas();
+const allViewers: ViewerPersona[] = [
+  ...loadViewerPersonas(),
+  ...loadMaliciousViewerPersonas()
+];
 
 function buildPersonaSummaries(): PersonaSummary[] {
   return [
@@ -52,7 +67,8 @@ function buildPersonaSummaries(): PersonaSummary[] {
       type: "viewer" as const,
       label: p.persona_label,
       segment: p.segment_id,
-      description: `${p.segment_id} · ${p.professional_context.role_family} · ${p.professional_context.seniority}`
+      description: `${p.segment_id} · ${p.professional_context.role_family} · ${p.professional_context.seniority}`,
+      personaCategory: p.persona_category ?? "normal"
     }))
   ];
 }
@@ -69,7 +85,7 @@ function selectViewers(segment: string, limit: number): ViewerPersona[] {
     segment && segment !== "all"
       ? allViewers.filter((v) => v.segment_id === segment)
       : allViewers;
-  return filtered.slice(0, Math.max(1, Math.min(9, limit)));
+  return filtered.slice(0, Math.max(1, Math.min(12, limit)));
 }
 
 function findPersona(id: string): { type: PersonaType; persona: CreatorPersona | ViewerPersona } | undefined {
@@ -89,34 +105,45 @@ function parseJson<T>(text: string): T | null {
   }
 }
 
+function updateRound(
+  store: FeedbackStore,
+  personaId: string,
+  roundId: string,
+  patch: Partial<FeedbackRound>
+): FeedbackStore {
+  return {
+    ...store,
+    [personaId]: (store[personaId] ?? []).map((r) =>
+      r.roundId === roundId ? { ...r, ...patch } : r
+    )
+  };
+}
+
 export default function App() {
   const [activePersona, setActivePersona] = useState<PersonaSummary | null>(null);
-  const [messages, setMessages] = useState<ChatMessage[]>([]);
-  const [history, setHistory] = useState<LlmMessage[]>([]);
+  const [conversationStore, setConversationStore] = useState<
+    Record<string, { messages: ChatMessage[]; history: LlmMessage[] }>
+  >({});
+  const messages = activePersona ? (conversationStore[activePersona.id]?.messages ?? []) : [];
+  const history = activePersona ? (conversationStore[activePersona.id]?.history ?? []) : [];
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [provider, setProvider] = useState<ChatProvider | "auto">("auto");
   const [autoFeedback, setAutoFeedback] = useState(true);
   const [viewerSegment, setViewerSegment] = useState("all");
   const [viewerLimit, setViewerLimit] = useState(3);
-  const [feedbackItems, setFeedbackItems] = useState<ViewerFeedbackItem[]>([]);
-  const [commentItems, setCommentItems] = useState<ViewerCommentItem[]>([]);
-  const [feedbackLoading, setFeedbackLoading] = useState(false);
-  const [commentsLoading, setCommentsLoading] = useState(false);
+  const [feedbackStore, setFeedbackStore] = useState<FeedbackStore>({});
   const [statusText, setStatusText] = useState("ready");
+
+  const feedbackRounds = activePersona ? (feedbackStore[activePersona.id] ?? []) : [];
 
   const selectPersona = useCallback((p: PersonaSummary) => {
     setActivePersona(p);
-    setMessages([]);
-    setHistory([]);
-    setFeedbackItems([]);
-    setCommentItems([]);
     setError("");
   }, []);
 
   const evaluateWithViewers = useCallback(
-    async (content: string) => {
-      setFeedbackLoading(true);
+    async (content: string, personaId: string, roundId: string) => {
       const resolvedProvider = resolveProvider(provider);
       const client = createLlmClient(resolvedProvider);
       const viewers = selectViewers(viewerSegment, viewerLimit);
@@ -139,26 +166,30 @@ export default function App() {
             } as ViewerFeedbackItem;
           })
         );
-        setFeedbackItems(results);
+        setFeedbackStore((prev) =>
+          updateRound(prev, personaId, roundId, { feedbackItems: results, feedbackLoading: false })
+        );
       } catch (e) {
-        setFeedbackItems([
-          {
-            viewerId: "error",
-            label: "오류",
-            segment: "",
-            raw: e instanceof Error ? e.message : String(e)
-          }
-        ]);
-      } finally {
-        setFeedbackLoading(false);
+        setFeedbackStore((prev) =>
+          updateRound(prev, personaId, roundId, {
+            feedbackItems: [
+              {
+                viewerId: "error",
+                label: "오류",
+                segment: "",
+                raw: e instanceof Error ? e.message : String(e)
+              }
+            ],
+            feedbackLoading: false
+          })
+        );
       }
     },
     [provider, viewerSegment, viewerLimit]
   );
 
   const simulateComments = useCallback(
-    async (content: string) => {
-      setCommentsLoading(true);
+    async (content: string, personaId: string, roundId: string) => {
       const resolvedProvider = resolveProvider(provider);
       const client = createLlmClient(resolvedProvider);
       const viewers = selectViewers(viewerSegment, viewerLimit);
@@ -181,20 +212,25 @@ export default function App() {
             } as ViewerCommentItem;
           })
         );
-        setCommentItems(results);
+        setFeedbackStore((prev) =>
+          updateRound(prev, personaId, roundId, { commentItems: results, commentsLoading: false })
+        );
       } catch (e) {
-        setCommentItems([
-          {
-            viewerId: "error",
-            label: "오류",
-            segment: "",
-            would_comment: false,
-            comment: null,
-            reason: e instanceof Error ? e.message : String(e)
-          }
-        ]);
-      } finally {
-        setCommentsLoading(false);
+        setFeedbackStore((prev) =>
+          updateRound(prev, personaId, roundId, {
+            commentItems: [
+              {
+                viewerId: "error",
+                label: "오류",
+                segment: "",
+                would_comment: false,
+                comment: null,
+                reason: e instanceof Error ? e.message : String(e)
+              }
+            ],
+            commentsLoading: false
+          })
+        );
       }
     },
     [provider, viewerSegment, viewerLimit]
@@ -207,7 +243,13 @@ export default function App() {
       const selected = findPersona(activePersona.id);
       if (!selected) return;
 
-      setMessages((prev) => [...prev, { role: "user", content: text }]);
+      setConversationStore((prev) => ({
+        ...prev,
+        [activePersona.id]: {
+          messages: [...(prev[activePersona.id]?.messages ?? []), { role: "user", content: text }],
+          history: prev[activePersona.id]?.history ?? [],
+        },
+      }));
       setBusy(true);
       setError("");
 
@@ -225,13 +267,34 @@ export default function App() {
       try {
         const response = await client.chat(llmMessages);
         const assistantMsg: LlmMessage = { role: "assistant", content: response };
-        setHistory([...updatedHistory, assistantMsg]);
-        setMessages((prev) => [...prev, { role: "assistant", content: response }]);
+        setConversationStore((prev) => ({
+          ...prev,
+          [activePersona.id]: {
+            messages: [...(prev[activePersona.id]?.messages ?? []), { role: "assistant", content: response }],
+            history: [...updatedHistory, assistantMsg],
+          },
+        }));
         setStatusText(resolvedProvider);
 
         if (selected.type === "creator" && autoFeedback) {
-          evaluateWithViewers(response);
-          simulateComments(response);
+          const roundId = `${activePersona.id}_${Date.now()}`;
+          const contentPreview = response.slice(0, 100);
+          setFeedbackStore((prev) => ({
+            ...prev,
+            [activePersona.id]: [
+              ...(prev[activePersona.id] ?? []),
+              {
+                roundId,
+                contentPreview,
+                feedbackItems: [],
+                commentItems: [],
+                feedbackLoading: true,
+                commentsLoading: true
+              }
+            ]
+          }));
+          evaluateWithViewers(response, activePersona.id, roundId);
+          simulateComments(response, activePersona.id, roundId);
         }
       } catch (e) {
         setError(e instanceof Error ? e.message : String(e));
@@ -239,7 +302,7 @@ export default function App() {
         setBusy(false);
       }
     },
-    [activePersona, busy, provider, history, autoFeedback, evaluateWithViewers, simulateComments]
+    [activePersona, busy, provider, conversationStore, autoFeedback, evaluateWithViewers, simulateComments]
   );
 
   return (
@@ -277,12 +340,7 @@ export default function App() {
               onSend={sendMessage}
             />
           </section>
-          <ViewerPanel
-            feedbackItems={feedbackItems}
-            commentItems={commentItems}
-            feedbackLoading={feedbackLoading}
-            commentsLoading={commentsLoading}
-          />
+          <ViewerPanel feedbackRounds={feedbackRounds} />
         </div>
       </main>
     </div>

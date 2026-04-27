@@ -56,4 +56,6 @@ export interface ViewerPersona {
   trust_criteria: string[];
   action_weights: ScoreMap;
   evaluation_rubric: string[];
+  persona_category?: "normal" | "malicious";
+  malicious_viewer_type?: "defamation" | "spam" | "harassment";
 }

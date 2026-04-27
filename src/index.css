@@ -117,6 +117,16 @@ main {
 .viewer-tab.active { color: var(--accent); border-bottom-color: var(--accent); background: #f9fafb; }
 .viewer-tab-content { flex: 1; overflow: auto; padding: 14px; overscroll-behavior: contain; }
 .viewer-help { color: var(--muted); font-size: 12px; line-height: 1.45; margin-bottom: 12px; }
+.feedback-round--latest { margin-bottom: 16px; }
+.feedback-round--archived { margin-bottom: 8px; }
+.feedback-round-summary {
+  cursor: pointer; font-size: 11px; color: var(--muted); padding: 6px 0;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  list-style: none; display: flex; align-items: center; gap: 6px;
+}
+.feedback-round-summary::before { content: "▶"; font-size: 9px; flex-shrink: 0; }
+details[open] .feedback-round-summary::before { content: "▼"; }
+details[open] .feedback-round-summary { margin-bottom: 8px; }
 .viewer-feedback-list { display: grid; gap: 10px; }
 .feedback-card {
   background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px;
